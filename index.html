@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="weatherApp">
+        <div class="weatherAppBox">
+            <h2>WEATHER APP</h2>
+            <form id="weatherForm">
+                <input type="text" id="weatherInput" placeholder="Enter Some City" required />
+                <button  type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="weatherCard hidden">
+            <h2 id="cityName"></h2>
+            <div class="weatherInfo" id="weatherBox">
+                <div class="weatherStats">
+                    <p>Temperature</p>
+                    <p><span id="temperature"></span></p>
+                </div>
+                <div class="weatherStats">
+                    <p>Feels like</p>
+                    <p><span id="feelslike"></span></p>
+                </div>
+                <div class="weatherStats">
+                    <p>Condition</p>
+                    <p><span id="condition"></span></p>
+                </div>
+                <div class="weatherStats">
+                    <p>Wind</p>
+                    <p><span id="wind"></span></p>
+                </div>
+                <div class="weatherStats">
+                    <p>Humidity</p>
+                    <p><span id="humidity"></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
